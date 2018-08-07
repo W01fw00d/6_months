@@ -48,14 +48,12 @@ body {
   border-top-left-radius: 1000px; /* width * 2 */
   border-top-right-radius: 1000px; /* width * 2 */
   
-/*  background: dodgerblue;*/
 }
 
 .half-circle-bottom {
   border-bottom-left-radius: 1000px; /* width * 2 */
   border-bottom-right-radius: 1000px; /* width * 2 */
   
-/*  background: darkred;*/
   margin: -2px 0px;
   border-top-style: dashed;
 }
@@ -84,7 +82,6 @@ body {
 .slot {
   height: 30px;
   width: 30px;
-/*  background-color: #bbb;*/
   border-radius: 50%;
   display: inline-block;
   margin: 9px;
@@ -104,7 +101,7 @@ body {
 
 @keyframes colder {
     from { background: #FF452C; }
-    to { background: #B2CAC7; }  /* 0AD1B6 */
+    to { background: #B2CAC7; }
 }
 
 @keyframes hottest {
@@ -120,6 +117,5 @@ body {
 
 @keyframes hotter {
     from { background: #DFFFFC; }
-    to { background: #9E2C1D; } /* FAC500 */
+    to { background: #9E2C1D; }
 }
-
