@@ -1,0 +1,48 @@
+.circle {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border-color: black;
+  border-style: solid;
+  margin: 60px auto;
+}
+
+/*
+.ecuador {
+  width: 497px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin: 250px auto;
+}
+*/
+
+/*
+.half-circle {
+  background: #9e978e;
+  display: inline-block;
+  margin: 0 1em 1em 0;
+}
+*/
+
+.half-circle-top,
+.half-circle-bottom {
+  height: 250px;
+  width: 500px; /* height * 2 */
+}
+
+.half-circle-top {
+  border-top-left-radius: 1000px; /* width * 2 */
+  border-top-right-radius: 1000px; /* width * 2 */
+  
+  background: dodgerblue;
+}
+
+.half-circle-bottom {
+  border-bottom-left-radius: 1000px; /* width * 2 */
+  border-bottom-right-radius: 1000px; /* width * 2 */
+  
+  background: darkred;
+  margin: -2px 0px;
+  border-top-style: dashed;
+}
