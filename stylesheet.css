@@ -1,3 +1,34 @@
+html, body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(circle at center center, #333 0%, #111 100%);
+  margin: 0;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.curtain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  
+  background: black;
+  color: white;
+}
+
+.timer {
+  color: white;
+}
+
 .circle {
   height: 500px;
   width: 500px;
@@ -6,24 +37,6 @@
   border-style: solid;
   margin: 60px auto;
 }
-
-/*
-.ecuador {
-  width: 497px;
-  border-color: black;
-  border-style: solid;
-  border-width: 2px;
-  margin: 250px auto;
-}
-*/
-
-/*
-.half-circle {
-  background: #9e978e;
-  display: inline-block;
-  margin: 0 1em 1em 0;
-}
-*/
 
 .half-circle-top,
 .half-circle-bottom {
@@ -35,14 +48,78 @@
   border-top-left-radius: 1000px; /* width * 2 */
   border-top-right-radius: 1000px; /* width * 2 */
   
-  background: dodgerblue;
+/*  background: dodgerblue;*/
 }
 
 .half-circle-bottom {
   border-bottom-left-radius: 1000px; /* width * 2 */
   border-bottom-right-radius: 1000px; /* width * 2 */
   
-  background: darkred;
+/*  background: darkred;*/
   margin: -2px 0px;
   border-top-style: dashed;
 }
+
+.hotter-hemisphere {
+  animation: 10s hotter linear infinite;
+}
+
+.hottest-hemisphere {
+  animation: 10s hottest linear infinite;
+}
+
+.colder-hemisphere {
+  animation: 10s colder linear infinite;
+}
+
+.coldest-hemisphere {
+  animation: 10s coldest linear infinite;
+}
+
+
+.slot-wrapper {
+    padding: 100px 200px;
+}
+
+.slot {
+  height: 30px;
+  width: 30px;
+/*  background-color: #bbb;*/
+  border-radius: 50%;
+  display: inline-block;
+  margin: 9px;
+}
+
+.slot.coldest-slot {
+  background: #DFFFFC;
+  border: 2px solid black;
+  margin: 7px;
+}
+
+.slot.hottest-slot {
+  background: #FF452C;
+  border: 2px solid black;
+  margin: 7px;
+}
+
+@keyframes colder {
+    from { background: #FF452C; }
+    to { background: #B2CAC7; }  /* 0AD1B6 */
+}
+
+@keyframes hottest {
+    from { background: #B2CAC7; }
+    to { background: #FF452C; }
+}
+
+
+@keyframes coldest {
+    from { background: #9E2C1D; }
+    to { background: #DFFFFC; }
+}
+
+@keyframes hotter {
+    from { background: #DFFFFC; }
+    to { background: #9E2C1D; } /* FAC500 */
+}
+
